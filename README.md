@@ -1,0 +1,2 @@
+# CoalReport
+开发工具为Android Studio，开发语言为Java，结合mysql数据库,UI界面使用fragment。app后端服务器采用SpringBoot+Mybatis框架，提供了若干接口给app与MySQL交互，该项目实现了一个可以发布文字、图片及视频的app，同时还实现了用SpringBoot+Mybatis框架，前端采用Thymeleaf+Bootstrap来实现页面效果展示，用于app的后台管理系统。  
