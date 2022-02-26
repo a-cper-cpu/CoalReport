@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coalreport">
+
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡的写入权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读外部存储的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login.UpdatePwordActivity"></activity>
+        <activity android:name=".dailysaying.DailySayingActivity" />
+        <activity android:name=".releaseprogress.PhotoProgressActivity" />
+        <activity android:name=".releaseprogress.TextProgressActivity" />
+        <activity android:name=".releaseprogress.VideoProgressActivity" />
+        <activity android:name=".releaseprogress.ProgressActivity" />
+        <activity android:name=".releasevideo.ReleaseVideoActivity" />
+        <activity android:name=".releasephoto.ReleasePhotoActivity" />
+        <activity android:name=".releasetext.ReleaseTextActivity" />
+        <activity android:name=".about.AboutActivity" />
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.StartActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".welcome.InitAdvActivity" />
+        <activity
+            android:name=".welcome.StartPageActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.coalreport.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

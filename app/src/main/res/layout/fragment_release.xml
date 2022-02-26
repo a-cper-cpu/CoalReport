@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".fragment.ReleaseFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/releasebag" />
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_big_register_btn"
+        android:text="我要举报"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+
+</LinearLayout>

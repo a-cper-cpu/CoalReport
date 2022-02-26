@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--禁用掉明文流量请求的检查
+        如果当前应用的请求是 http 请求，而非 https ,
+        这样就会导系统禁止当前应用进行该请求，
+        如果 WebView 的 url 用 http 协议，
+        同样会出现加载失败，https 不受影响。
+    -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

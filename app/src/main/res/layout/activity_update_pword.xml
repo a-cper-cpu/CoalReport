@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.UpdatePwordActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/updatepword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="278dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/shape_login_form"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="43dp"
+            android:paddingRight="31dp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="23dp"
+                android:background="#e8e7e7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/pwd" />
+
+                <EditText
+                    android:id="@+id/et_updatepwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:hint="@string/pwd_hint"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHint="#bcbcbc"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_updatepword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/shape_big_login_btn"
+            android:text="修改"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>

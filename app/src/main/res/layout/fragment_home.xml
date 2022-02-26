@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="#344261"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/shape_search_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="13dp"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="11dp"
+                android:background="@null"
+                android:hint="搜索你需要的"
+                android:textColor="@color/black"
+                android:textColorHint="#737373"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/slidingTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tl:tl_indicator_color="#fdf299"
+            tl:tl_indicator_corner_radius="1.5dp"
+            tl:tl_indicator_height="3dp"
+            tl:tl_indicator_width="17dp"
+            tl:tl_textSelectColor="#fdf299"
+            tl:tl_textUnselectColor="#ffffff"
+            tl:tl_textsize="16sp" />
+
+    </LinearLayout>
+
+    <com.example.coalreport.view.FixedViewPager
+        android:id="@+id/fixedViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

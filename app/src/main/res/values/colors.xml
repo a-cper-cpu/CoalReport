@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLogin">#109BAB</color>
+    <color name="colorUsername">#F44336</color>
+    <color name="colorPassword">#FFEB3B</color>
+    <color name="blue" >#00BCD4</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="title_text">#26B8EE</color>
+    <color name="bg_login">#fdfdfd</color>
+    <color name="btn_login">#cfdfd3</color>
+    <color name="tv_nav_list">#2E4D4D</color>
+    <color name="gray_8f">#8f8f8f</color>
+    <color name="black">#000000</color>
+    <color name="divider">#e8e7e7</color>
+    <color name="skin_text_white">#ffffff</color>
+    <color name="skin_topbar_bg_color">#344261</color>
+</resources>

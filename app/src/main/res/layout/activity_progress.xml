@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".releaseprogress.ProgressActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_bag" />
+
+    <Button
+        android:id="@+id/btn_progressvideo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_big_login_btn"
+        android:text="视频举报进展"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_progresstext"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_big_login_btn"
+        android:text="文字举报进展"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/btn_progressphoto"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_big_login_btn"
+        android:text="图片举报进展"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+</RelativeLayout>

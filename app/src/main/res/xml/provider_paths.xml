@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        表示外部内存卡根目录下的APP缓存目录，
+        对应根目录等价于Context.getExternalCacheDir()，查看完整路径：
+
+    -->
+    <external-cache-path
+        name="tmp"
+        path="."/>
+
+
+
+
+
+</paths>
